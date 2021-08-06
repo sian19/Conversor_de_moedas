@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de conversão de moedas">
+    <meta name="keywords" content="real, euro, dólar">
+    <meta name="Author" content="Sean Taron">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="JS/script.js"></script>
+    <title>Conversão</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="center">
+            <img src="images/moeda.png" alt="ilustração">
+            <h2>Conversor de moedas</h2>
+        </div>
+    </header>
+
+    <!--Main(conteúdo)-->
+    <main>
+        <div class="center">
+            <h2>Conversor</h2>
+
+            <div class="bloco">
+                <section>
+                    <p>Valor</p>
+                    <input type=number id="valor" placeholder="0,00" value="0,00">
+                </section>
+
+                <section>
+                    <p>Converter de:</p>
+                    <button id="button">
+                        <select name="list" id="moeda">
+                            <option value="Real(BRL)">Real</option>
+                            <option value="Dólar(USD)">Dólar</option>
+                            <option value="Euro(EUR)">Euro</option>
+                        </select>
+                    </button>
+                </section>
+
+                <section>
+                    <p>Converter para:</p>
+                    <button id="button2">
+                        <select name="list" id="moedaConver">
+                            <option value="Real(BRL)">Real</option>
+                            <option value="Dólar(USD)">Dólar</option>
+                            <option value="Euro(EUR)">Euro</option>
+                        </select>
+                    </button>
+                </section>
+
+                <section>
+                    <button id="converter">Converter</button>
+                </section>
+
+            </div>
+
+            <!--Resultado-->
+            <div class="result">
+                <h3>Resultado da conversão</h3>
+                <div class="result-bloco">
+                    <section class="wraper">
+                        <div class="text">
+                            <h3 id="converterD">Conversão de:
+                            </h3>
+                            <p id="MoedaUsada"></p>
+                        </div>
+
+                        <div class="text">
+                            <h3 id="valorDisplay">Valor a converter:</h3>
+                            <p id="valorConver"></p>
+                        </div>
+                    </section>
+
+                    <section class="wraper">
+                        <div class="text">
+                            <h3 id="converterP">Para:</h3>
+                            <p id="MoedaConvertida"></p>
+                        </div>
+
+                        <div class="text">
+                            <h3>Resultado da conversão:</h3>
+                            <p id="resultado"></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!--Bannerr-->
+            <div class="banner">
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
