@@ -288,7 +288,7 @@ section.wraper .text{
     /***Banner***/
     .banner {
        display: block;
-        heigth: auto;
+       heigth: auto;
     }
 
     .banner .img:first-of-type, .banner .img:last-child{
