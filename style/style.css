@@ -11,7 +11,7 @@ html{
     --blue: #84c4d9;
 
     width:  100vw;
-    height:  100%;
+    height:  100vh;
 }
 
 body{
@@ -288,6 +288,7 @@ section.wraper .text{
     /***Banner***/
     .banner {
        display: block;
+        heigth: auto;
     }
 
     .banner .img:first-of-type, .banner .img:last-child{
